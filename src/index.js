@@ -16,6 +16,8 @@ module.exports = function solveEquation(equation) {
   var discriminant = B * B - 4 * A * C;
   var x1 = (-B + Math.pow(discriminant, 1 / 2)) / (2 * A);
   var x2 = (-1 * B - Math.sqrt(discriminant)) / (2 * A);
+  x1=Math.round(x1);
+  x2=Math.round(x2);
   var temp;
   if (x2 < x1) {
     temp = x2;
